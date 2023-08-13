@@ -14,13 +14,16 @@ git commit(这么写会出来一个框，在vi编辑器里面写注释，i开始
 
 git push（得先配置好远程才行，否则得输入github的用户名密码）
 
+向远程库推送：git push 远程库名称 分支名称 （推送所有：--all）
+关联远程仓库：git remote add 远程库名称 远程库地址
+
 在VS code按照它默认的push方式总是多生成一个分支，远程是main上传了一个master分支，试了两个仓库都是这样、、、
 
 
 分支相关：
 查看本地库对应的远程库： git remote -v
 
-查看本地分支：git branch(对应当前分支有一个星号)
+查看本地分支：git branch(对应当前分支有一个星号，正常是有输出的，未commit提交的库是空的，此时无显示，git add .以及git commit -m ""就有了)
 
 列出所有（远端+近端）分支：git branch -a
 
@@ -28,7 +31,7 @@ git push（得先配置好远程才行，否则得输入github的用户名密码
 
 分支切换： git checkout 分支名称
 
-向远程库推送：git push 远程库名称 分支名称 （推送所有：--all）
 
 删除分支：git branch -d 分支名称
 删除远程分支：git push 远程库名称 -d(-D：强制删除有修改未合并) 分支名称
+移除已关联的远程仓库：git remote remove 远程仓库名字
