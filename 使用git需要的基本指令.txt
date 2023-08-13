@@ -12,10 +12,10 @@ git add .
 git commit(这么写会出来一个框，在vi编辑器里面写注释，i开始写写完后按esc键后:wq退出q!不保存退出),也可以直接git commit -m "提交的信息"
 （也可以git commit --amend -m "提交的信息"，日志里少一条）
 
-git push（得先配置好远程才行，否则得输入github的用户名密码）
+git push（得先配置好远程才行，否则得输入github的用户名密码），第一次提交需要： git push -u 远程库名称 上传的分支
 
 向远程库推送：git push 远程库名称 分支名称 （推送所有：--all）
-关联远程仓库：git remote add 远程库名称 远程库地址
+关联远程仓库：git remote add 远程库名称(自己起的名字) 远程库地址（网页的链接）
 
 在VS code按照它默认的push方式总是多生成一个分支，远程是main上传了一个master分支，试了两个仓库都是这样、、、
 
